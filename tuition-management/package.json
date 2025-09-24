@@ -1,0 +1,45 @@
+{
+  "name": "tuition-management-system",
+  "version": "1.0.0",
+  "description": "A comprehensive tuition management system for managing students, tutors, courses, and payments",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "test": "npm run test:backend && npm run test:frontend",
+    "test:backend": "cd backend && npm test",
+    "test:frontend": "cd frontend && npm test",
+    "lint": "npm run lint:backend && npm run lint:frontend",
+    "lint:backend": "cd backend && npm run lint",
+    "lint:frontend": "cd frontend && npm run lint",
+    "seed": "cd backend && node seedData.js"
+  },
+  "keywords": [
+    "tuition",
+    "management",
+    "education",
+    "students",
+    "payments",
+    "react",
+    "nodejs",
+    "express",
+    "sqlite"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/tuition-management.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/tuition-management/issues"
+  },
+  "homepage": "https://github.com/your-username/tuition-management#readme"
+}
