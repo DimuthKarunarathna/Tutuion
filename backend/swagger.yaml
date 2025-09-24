@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: Tuition API
+  version: 1.0.0
+  description: API for managing tuition data
+servers:
+  - url: http://localhost:3001
+    description: Local server
+paths:
+  /api:
+    get:
+      summary: Get a greeting
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Hello from the backend!
